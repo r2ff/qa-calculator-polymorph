@@ -10,16 +10,10 @@ class CalculatorTest {
     private Calculator calculator =  new Calculator(new MockMultReader());
 
     @Test
-    void sumTest() {
-        int sum = calculator.sum(3,5);
-        Assertions.assertEquals(8, sum);
-
+    void calculatorTest() {
+        String result = calculator.start(); //3 5 *
+        Assertions.assertEquals("3 * 5 = 15", result);
     }
 
-    @Test
-    void multTest() {
-        int mult = calculator.mult(3,5);
-        Assertions.assertEquals(15, mult);
 
-    }
 }

@@ -6,5 +6,5 @@ public interface Reader {
 
     int readSecondArg();
 
-    Operation readMathOperator();
+    Operation readMathOperation();
 }

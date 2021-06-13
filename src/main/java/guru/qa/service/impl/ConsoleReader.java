@@ -20,7 +20,7 @@ public class ConsoleReader implements Reader {
     }
 
     @Override
-    public Operation readMathOperator() {
+    public Operation readMathOperation() {
         return Operation.lookup(reader.next().charAt(0));
     }
 }
