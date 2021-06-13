@@ -1,6 +1,9 @@
-package guru.qa.service;
+package guru.qa.service.impl;
 
-public class MockMultReader implements Reader{
+import guru.qa.service.Operation;
+import guru.qa.service.Reader;
+
+public class MockMultReader implements Reader {
     @Override
     public int readFirstArg() {
         return 3;

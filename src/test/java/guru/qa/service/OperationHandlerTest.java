@@ -1,6 +1,7 @@
-package guru.qa.service.impl;
+package guru.qa.service;
 
 import guru.qa.service.OperationHandler;
+import guru.qa.service.impl.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
