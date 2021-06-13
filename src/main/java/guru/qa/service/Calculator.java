@@ -13,14 +13,11 @@ public class Calculator {
 
     public String start() {
         writer.handleString(Messages.ENTER_TWO_NUMBERS.getS());
-        //System.out.print("Введите два числа: ");
         int first = reader.readFirstArg();
         int second = reader.readSecondArg();
         writer.handleString(Messages.ENTER_OPERATOR.getS());
-        //System.out.print("Введите оператор (+, *, -, /, ^): ");
         Operation po = reader.readMathOperation();
         int sum = po.getOperation().invoke(first,second);
-        //System.out.print("\nРезультат:\n");
         writer.handleString(Messages.RESULT.getS());
         return (first + " " + po.getSymbol() + " " + second + " = " + sum);
     }

@@ -1,13 +1,10 @@
 package guru.qa.service;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
-
 import guru.qa.service.impl.MockMessageWriter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MessageWriterTest {
+public class WriterTest {
     MockMessageWriter writer = new MockMessageWriter();
 
     @Test
